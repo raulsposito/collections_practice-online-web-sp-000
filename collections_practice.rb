@@ -1,4 +1,4 @@
-array = [1, 5, 9]
+array = [1, 5, 9, "string"]
 def sort_array_asc(array)
   array.sort do |a, b|
     a <=> b
@@ -12,4 +12,7 @@ def sort_array_desc(array)
 end
 
 def sort_array_char_count(array)
-  
+  array.sort do |a, b|
+    a.length > b.length
+  end
+end
